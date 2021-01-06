@@ -1,0 +1,35 @@
+<div class="nile-page-title">
+  <div class="container">
+      <h1>{{ service?.title }}</h1>
+      <!-- <ul class="breadcrumbs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Pages</a></li>
+          <li class="active">Our Services</li>
+      </ul> -->
+
+  </div>
+</div>
+
+<div class="padding-tb-100px">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-8 single-services">
+                <div class="thum">
+                    <img class="box-shadow" src="{{ service?.image }}" alt="">
+                </div>
+
+                <div class="content">
+                    <p>{{ service?.description }}</p>
+                </div>
+
+
+            </div>
+
+            <div class="col-lg-4">
+                <app-service-sidebar></app-service-sidebar>
+            </div>
+
+        </div>
+    </div>
+</div>

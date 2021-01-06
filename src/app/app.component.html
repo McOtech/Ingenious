@@ -1,0 +1,250 @@
+
+<!--  HEADER  -->
+<header class="box-shadow layout-2">
+<div class="header-output">
+    <div class="container header-in">
+        <div class="position-relative">
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <a id="logo" routerLink="/" class="d-inline-block margin-tb-15px"><img src="assets/img/logo-1.png" alt=""></a>
+                    <a class="mobile-toggle padding-15px background-main-color border-radius-3" href="#"><i class="fa fa-bars"></i></a>
+                </div>
+                <div class="col-lg-7 col-md-12 d-none d-lg-block position-inherit">
+                    <div class="contact-info-out">
+
+                        <!-- contact info -->
+                        <div class="contact-info opacity-9">
+                            <div class="icon map margin-top-5px"></div>
+                            <div class="text">
+                                <span class="title-in">Location :</span> <br>
+                                <span class="font-weight-700 text-uppercase">Kenya, Nairobi Kilimani Rose Avenue</span>
+                            </div>
+                        </div>
+                        <!-- // contact info -->
+
+
+                        <!-- contact info -->
+                        <div class="contact-info opacity-9">
+                            <div class="icon mail margin-top-5px"></div>
+                            <div class="text">
+                                <span class="title-in">Email :</span> <br>
+                                <span class="font-weight-700 text-uppercase">info@ingenious.co.ke</span>
+                            </div>
+                        </div>
+                        <!-- // contact info -->
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="background-second-color">
+    <div class="container">
+
+        <div class="nav-output">
+
+            <ul id="menu-main" class="nav-menu float-xl-left text-lg-center link-padding-tb-15px dropdown-light">
+                <li><a routerLink="/">Home</a></li>
+                <li><a routerLink="/about">About Us</a></li>
+                <li><a routerLink="/services">Services</a></li>
+                <li><a routerLink="/contact">Contact Us</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+    <div class="clearfix"></div>
+</div>
+</header>
+<!-- // HEADER  -->
+
+<!-- Search  -->
+<!-- <div id="search">
+  <button type="button" class="close">×</button>
+  <form class="clearfix d-block">
+      <input type="search" value="" placeholder="Search for . . . ." />
+      <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+</div> -->
+<!-- // Search  -->
+
+<router-outlet></router-outlet>
+
+<a href="#" class="go-top box-shadow background-second-color"><span class="arrow_carrot-up"></span></a>
+
+<footer class="layout-1">
+<div class="output padding-tb-100px">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-3">
+                <div class="nile-widget about-me-widget">
+                    <div class="about-me">
+                        <div class="image"><img src="assets/img/logo-1.png" alt=""></div>
+
+                        <div class="text-about margin-tb-25px">
+                          Ingenious is a Kenyan incorporated company that was founded with the aim of
+                          meeting the growing demand for high-quality in turnkey solutions.
+                        </div>
+
+                        <a routerLink="/contact" class="nile-bottom sm">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="nile-widget layout-1 niletheme_latest_news_widget">
+                    <h2 class="title">Our Services</h2>
+                    <ul class="lastet-Posts">
+                        <!-- item -->
+                        <li *ngFor="let service of services">
+                            <div class="img_in">
+                                <a routerLink="/services/{{ service.id }}"><img src="{{ service.image }}" alt=""></a>
+                            </div>
+                            <a class="date" routerLink="/services/IT-systems"> {{ service.title }}</a>
+                            <a class="title" routerLink="/services/IT-systems">{{ (service.description.substr(0, 42)) }}</a>
+                        </li>
+                        <!-- End item -->
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="nile-widget layout-1 niletheme_contact_widget">
+                    <h2 class="title">Contact Us</h2>
+                    <form>
+                        <input type="text" id="inputName2" placeholder="Your Name">
+                        <input type="text" id="inputEmail2" placeholder="Your Email">
+                        <textarea id="Textarea2" placeholder="Your Message" rows="3"></textarea>
+                        <a href="#" class="nile-bottom sm">SEND MESSAGE</a>
+                    </form>
+                </div>
+            </div>
+
+            <!-- <div class="col-lg-3">
+                <div class="nile-widget layout-1 niletheme_projects_widget">
+                    <h2 class="title">Our Projects</h2>
+                    <ul class="projects-feed">
+                        <li><a href="#"><img src="assets/img/work-thumbnail-1.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="assets/img/work-thumbnail-2.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="assets/img/work-thumbnail-3.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="assets/img/work-thumbnail-4.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="assets/img/work-thumbnail-5.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="assets/img/work-thumbnail-6.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="assets/img/work-thumbnail-7.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="assets/img/work-thumbnail-8.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="assets/img/work-thumbnail-9.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div> -->
+
+
+        </div>
+
+    </div>
+</div>
+<div class="copy-right">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="copy-text padding-tb-4px">&copy; 2020 Ingenious - All Rights Reserved.</div>
+            </div>
+            <div class="col-lg-4">
+                <ul class="social-media">
+                    <li class="list-inline-item"><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a class="youtube" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a class="linkedin" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <!-- <li class="list-inline-item"><a class="google" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li> -->
+                    <li class="list-inline-item"><a class="twitter" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <!-- <li class="list-inline-item"><a class="rss" href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+<div class="close-nile-sidebar"></div>
+
+<div id="nile-sidebar" class="nile-sidebar widget-area nile-widget-area">
+
+<div class="nile-widget about-me-widget">
+    <div class="about-me">
+        <div class="image"><img src="assets/img/logo-light.svg" alt=""></div>
+
+        <div class="text-about margin-tb-25px">
+            A great city, whose image dwells in the memory of man, is the type of some great idea. Rome represents conquest; Faith hovers over the towers of Jerusalem; and Athens embodies the pre-eminent quality of the antique world, Art.
+        </div>
+
+        <a href="#" class="nile-bottom sm">Contact Us</a>
+    </div>
+</div>
+
+
+<div class="nile-widget layout-1 niletheme_latest_news_widget">
+    <h2 class="title">Latest Posts</h2>
+    <ul class="lastet-Posts">
+        <!-- item -->
+        <li>
+            <div class="img_in">
+                <a href="#"><img src="assets/img/blog-thumbnail-1.jpg" alt=""></a>
+            </div>
+            <a class="date" href="#"> May 22, 2018</a>
+            <a class="title" href="#">How To Market Your Consulting Business ...</a>
+        </li>
+        <!-- End item -->
+
+        <!-- item -->
+        <li>
+            <div class="img_in">
+                <a href="#"><img src="assets/img/blog-thumbnail-2.jpg" alt=""></a>
+            </div>
+            <a class="date" href="#"> May 22, 2018</a>
+            <a class="title" href="#">SAP Business One Technical Versus Functional ...</a>
+        </li>
+        <!-- End item -->
+
+        <!-- item -->
+        <li>
+            <div class="img_in">
+                <a href="#"><img src="assets/img/blog-thumbnail-3.jpg" alt=""></a>
+            </div>
+            <a class="date" href="#"> May 22, 2018</a>
+            <a class="title" href="#">How To Choose An IT Consulting Firm</a>
+        </li>
+        <!-- End item -->
+
+    </ul>
+</div>
+
+<div class="nile-widget layout-1 niletheme_contact_widget">
+    <h2 class="title">Contact Us</h2>
+    <form>
+        <input type="text" id="inputName" placeholder="Your Name">
+        <input type="text" id="inputEmail" placeholder="Your Email">
+        <textarea id="Textarea1" placeholder="Your Message" rows="3"></textarea>
+        <a href="#" class="nile-bottom sm">SEND MESSAGE</a>
+    </form>
+</div>
+
+<div class="nile-widget layout-1 niletheme_projects_widget">
+    <h2 class="title">Our Projects</h2>
+    <ul class="projects-feed">
+        <li><a href="#"><img src="assets/img/work-thumbnail-1.jpg" alt=""></a></li>
+        <li><a href="#"><img src="assets/img/work-thumbnail-2.jpg" alt=""></a></li>
+        <li><a href="#"><img src="assets/img/work-thumbnail-3.jpg" alt=""></a></li>
+        <li><a href="#"><img src="assets/img/work-thumbnail-4.jpg" alt=""></a></li>
+        <li><a href="#"><img src="assets/img/work-thumbnail-5.jpg" alt=""></a></li>
+        <li><a href="#"><img src="assets/img/work-thumbnail-6.jpg" alt=""></a></li>
+        <li><a href="#"><img src="assets/img/work-thumbnail-7.jpg" alt=""></a></li>
+        <li><a href="#"><img src="assets/img/work-thumbnail-8.jpg" alt=""></a></li>
+        <li><a href="#"><img src="assets/img/work-thumbnail-9.jpg" alt=""></a></li>
+    </ul>
+</div>
+
+
+</div>

@@ -1,0 +1,33 @@
+<div class="nile-page-title">
+  <div class="container">
+      <h1>Our Services</h1>
+      <!-- <ul class="breadcrumbs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Pages</a></li>
+          <li class="active">Our Services</li>
+      </ul> -->
+
+  </div>
+</div>
+
+<div class="padding-tb-80px services-archive">
+    <div class="container">
+        <div class="row">
+
+            <!-- item -->
+            <div *ngFor="let service of services; let i = index" class="col-lg-4">
+                <div class="nile-service layout-1">
+                    <div class="icon"><img src="assets/icons/icon-2.svg" alt=""></div>
+                    <div class="img-in">
+                        <a routerLink="/services/{{ service.id }}"><img src="{{ service.image }}" alt=""></a>
+                    </div>
+                    <a routerLink="/services/{{ service.id }}" class="title">{{ service.title }}</a>
+                    <div class="wasf">{{ (service.description.substr(0, 50)) }}</div>
+                    <a routerLink="/services/{{ service.id }}" class="more">Read More</a>
+                </div>
+            </div>
+            <!-- End item -->
+
+        </div>
+    </div>
+</div>

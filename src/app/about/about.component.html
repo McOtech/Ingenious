@@ -1,0 +1,109 @@
+<div class="nile-page-title">
+  <div class="container">
+      <h1>About Us</h1>
+      <!-- <ul class="breadcrumbs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Pages</a></li>
+          <li class="active">About Us</li>
+      </ul> -->
+
+  </div>
+</div>
+
+<section class="padding-tb-100px section-ba-1">
+  <div class="container">
+      <div class="row no-gutters">
+          <div class="col-lg-5">
+              <img class="box-shadow border-radius-20" src="assets/img/about_1.png" alt="">
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-6">
+              <div class="padding-tb-50px">
+                  <div class="margin-bottom-30px">
+                      <h2 class="title-large margin-bottom-0px text-main-color">Ingenious Dsgn Solutions</h2>
+                      <!-- <h2 class="title-large margin-bottom-0px">About Us</h2> -->
+                  </div>
+                  <div class="text-medium margin-bottom-30px">Ingenious is a Kenyan incorporated company that was founded with the aim of
+                    meeting the growing demand for high-quality in turnkey solutions.
+                    We have a team of professionals with the experience and expertise in each of the
+                    above-mentioned fields. The team work with partner clients in defining the
+                    requirements and overall scope of deliverables. The team then coordinates the
+                    sourcing and delivery of the agreed solutions to customers' satisfaction, and in line
+                    with existing contracts and service level agreements</div>
+                  <!-- <a href="#" class="nile-bottom layout-1">Discover More</a> -->
+                  <div class="margin-bottom-30px">
+                    <h2 class="title-large margin-bottom-0px">Mission</h2>
+                </div>
+                <div class="text-medium margin-bottom-30px">We deliver to our customers goods and services of unmatched quality, within the set
+                  timelines and budgets, as an enabler to our clients achieving their critical mission
+                  engagements</div>
+                  <div class="margin-bottom-30px">
+                    <h2 class="title-large margin-bottom-0px">Vision</h2>
+                </div>
+                <div class="text-medium margin-bottom-30px">To become the leading one-stop-shop for high-quality supplies and bespoke equipment
+                  and products, to the satisfaction of all our business partners and stakeholders.</div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+<div class="section-ba-2">
+  <section class="padding-tb-85px">
+      <div class="container">
+          <!-- title -->
+          <div class="nile-title layout-1 text-center">
+              <div class="sub-title">Making your Life Easier</div>
+              <h2>What Makes Ingenious Stand Out?</h2>
+          </div>
+          <!-- // title -->
+          <div class="row">
+            <!-- item -->
+            <!-- <div *ngFor="let service of values" class="col-lg-4">
+                <div class="nile-service layout-1">
+                    <div class="icon"><img src="assets/icons/icon-2.svg" alt=""></div>
+                    <div class="img-in">
+                        <a routerLink="/services/{{ service.id }}"><img src="{{ service.image }}" alt=""></a>
+                    </div>
+                    <a routerLink="/services/interior-designs" class="title">{{ service.title }}</a>
+                    <div class="wasf">{{ (service.description.substr(0, 100)) }}</div>
+                    <a routerLink="/services/{{ service.id }}" class="more">Read More</a>
+                </div>
+            </div> -->
+            <!-- End item -->
+            <!-- Item -->
+            <div *ngFor="let value of values; let i = index" class="col-lg-6">
+              <div class="nile-testimonial layout-1">
+                <div class="output">
+                    <div class="img-in">
+                        <img src="assets/rslider/assets/61142-slider_1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="text">{{ value }}</div>
+                        <h3>Value {{ (i + 1) }}</h3>
+                        <!-- <div class="dis">Client</div> -->
+                    </div>
+                </div>
+              </div>
+            </div>
+          <!-- End Item -->
+          </div>
+      </div>
+  </section>
+</div>
+
+
+
+<section class="padding-tb-100px background-second-color">
+  <div class="container">
+      <div class="text-center">
+          <h2 class="title-xlarge">You dream. We design. Online & Offline.</h2>
+          <div class="text-medium-2  margin-tb-20px">
+              Our team is devoted to crafting compelling <br> online and offline experiences
+          </div>
+          <a href="#" class="nile-bottom layout-2">Discover More</a>
+      </div>
+  </div>
+</section>
